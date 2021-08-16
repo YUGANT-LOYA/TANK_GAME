@@ -5,7 +5,7 @@ using UnityEngine;
 public class TankMovement : MonoBehaviour
 {
     public int m_PlayerNumber = 1;
-    public float m_Speed = 12f;
+    public float m_Speed = 20f;
     public float m_TurnSpeed = 180f;
     public AudioSource m_MovementAudio;
     public AudioClip m_EngineIdle;
@@ -28,9 +28,9 @@ public class TankMovement : MonoBehaviour
 	{
         // When the tank is turned on, make sure it's not kinematic.
         m_RigidBody.isKinematic = false;
-        m_MovementInputValue = 0f;
 
         // Also reset the input values.
+        m_MovementInputValue = 0f;
         m_TurnInputValue = 0f;
 	}
 
@@ -88,16 +88,19 @@ public class TankMovement : MonoBehaviour
 	}
 
     void Move()
-	{
-	    Vector3 movement = m_Speed * new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-        m_RigidBody.velocity = new Vector3(m_MovementInputValue, m_RigidBody.velocity.y, m_TurnInputValue) * m_Speed;
-        
-	}
+    {
+	    Vector3 movement = transform.forward * m_MovementInputValue * m_Speed * Time.deltaTime;
+	    //m_RigidBody.velocity = new Vector3(m_TurnInputValue, 0, m_MovementInputValue) * m_Speed;
+
+	    m_RigidBody.MovePosition(m_RigidBody.position + movement);
+    }
 
     void Turn()
 	{
         float turn = m_TurnInputValue * m_TurnSpeed * Time.deltaTime;
         Quaternion turnRotation = Quaternion.Euler(0f, turn, 0f);
+
+        //Sequence of variable/parameter matters a lot in some Functions,if you try to write m_RigidBody.rotation after turnRotation, then the rotation of tank will be weird, which is not correct rotation.
         m_RigidBody.MoveRotation(m_RigidBody.rotation * turnRotation);
 	}
 }
