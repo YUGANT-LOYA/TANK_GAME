@@ -44,3 +44,11 @@ The following packages were added:
   com.unity.textmeshpro@2.1.6
   com.unity.timeline@1.2.18
   com.unity.ugui@1.0.0
+
+=== Wed Aug  4 10:58:00 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.collab-proxy from version 1.2.16 to 1.6.0
