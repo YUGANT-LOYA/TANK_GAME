@@ -327,6 +327,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65b0fd97cec7a614cb1a07b6c107a1b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Damp_Time: 0.3
+  m_ScreenEdgeBuffer: 4
+  m_MinSize: 18
+  m_Targets:
+  - {fileID: 1838634190}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +904,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!4 &1838634190 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2611970873343917812, guid: a4c23848219b02646ae27496a3806aac,
+    type: 3}
+  m_PrefabInstance: {fileID: 509435698}
+  m_PrefabAsset: {fileID: 0}
 --- !u!33 &245723150325784
 MeshFilter:
   m_ObjectHideFlags: 0
