@@ -7,8 +7,8 @@ public class Camera_Controller : MonoBehaviour
 	public float Damp_Time = 0.3f;
 	public float m_ScreenEdgeBuffer = 4f;
 	public float m_MinSize = 18f;
-
-	/*[HideInInspector] */ public Transform[] m_Targets;
+	
+	public Transform[] m_Targets;
 
 	private Camera m_Camera;
 	private Vector3 m_MoveVelocity;
