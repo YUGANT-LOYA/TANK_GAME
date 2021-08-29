@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TankMovement : MonoBehaviour
 {
     public int m_PlayerNumber = 1;
-    public float m_Speed = 20f;
+    public float m_Speed = 15f;
     public float m_TurnSpeed = 180f;
     public AudioSource m_MovementAudio;
     public AudioClip m_EngineIdle;

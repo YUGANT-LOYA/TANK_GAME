@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
@@ -10,7 +8,7 @@ public class Bullet : MonoBehaviour
 	public float m_ExplosionForce = 1000f;
 	public float m_MaxDamage = 100f;
 	public float m_MaxLifeTime = 2f;
-	public float m_ExplosionRadius = 5f;
+	public float m_ExplosionRadius = 10f;
 
 	void Start()
     {
@@ -40,7 +38,7 @@ public class Bullet : MonoBehaviour
 		m_ExplosionParticles.Play();
 		m_ExplosionAudio.Play();
 
-		Destroy(m_ExplosionParticles.gameObject, m_ExplosionParticles.duration);
+		Destroy(m_ExplosionParticles.gameObject, m_ExplosionParticles.main.duration);
 		Destroy(gameObject);
 	}
 
