@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: FLASH
   productName: TANK_GAME
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -44,8 +44,8 @@ PlayerSettings:
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
-  defaultScreenWidthWeb: 960
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 1920
+  defaultScreenHeightWeb: 1080
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -91,7 +91,7 @@ PlayerSettings:
   xboxEnableFitness: 0
   visibleInBackground: 1
   allowFullscreenSwitch: 1
-  fullscreenMode: 1
+  fullscreenMode: 2
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
@@ -124,7 +124,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1
+  bundleVersion: 1.0
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -263,7 +263,14 @@ PlayerSettings:
   androidGamepadSupportLevel: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 929e5d443f5e7034e99b654bd7d8ccc5, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons: []
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
@@ -325,6 +332,9 @@ PlayerSettings:
     m_Automatic: 0
   - m_BuildTarget: WebGLSupport
     m_APIs: 0b000000
+    m_Automatic: 1
+  - m_BuildTarget: WindowsStandaloneSupport
+    m_APIs: 02000000
     m_Automatic: 1
   m_BuildTargetVRSettings:
   - m_BuildTarget: Standalone
@@ -557,6 +567,7 @@ PlayerSettings:
   ps4videoRecordingFeaturesUsed: 0
   ps4contentSearchFeaturesUsed: 0
   ps4CompatibilityPS5: 0
+  ps4AllowPS5Detection: 0
   ps4GPU800MHz: 1
   ps4attribEyeToEyeDistanceSettingVR: 0
   ps4IncludedModules: []
