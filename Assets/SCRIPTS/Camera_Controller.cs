@@ -6,7 +6,7 @@ public class Camera_Controller : MonoBehaviour
 	public float m_ScreenEdgeBuffer = 4f;
 	public float m_MinSize = 18f;
 	
-	public Transform[] m_Targets;
+	[HideInInspector] public Transform[] m_Targets;
 
 	private Camera m_Camera;
 	private Vector3 m_MoveVelocity;
