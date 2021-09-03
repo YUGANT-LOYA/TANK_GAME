@@ -12,6 +12,7 @@ public class Tank_Shoot : MonoBehaviour
 	public AudioSource m_ShootingAudio;
     public AudioClip m_FiringClip;
     public AudioClip m_ChargingClip;
+    public float BulletSpeed = 1.7f;
     public float m_MinLaunchForce = 15f;
     public float m_MaxLaunchForce = 30f;
     public float m_ChargingTime = 0.75f;
@@ -69,7 +70,7 @@ public class Tank_Shoot : MonoBehaviour
 		m_Fired = true;
 		Rigidbody BulletInstance =
 			Instantiate(m_Bullet, m_FireTransform.position, m_FireTransform.rotation) as Rigidbody;
-		BulletInstance.velocity = m_CurrentLaunchForce * transform.forward;
+		BulletInstance.velocity = m_CurrentLaunchForce * transform.forward * BulletSpeed;
 		m_ShootingAudio.clip = m_FiringClip;
 		m_ShootingAudio.Play();
 
