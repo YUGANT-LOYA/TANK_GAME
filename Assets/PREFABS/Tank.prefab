@@ -5249,10 +5249,11 @@ AudioSource:
   m_GameObject: {fileID: 2611970873343917819}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24378114, guid: 86a7353f2579d476fbaa7f161c2e5d00,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4932ab25b84dd7649b80af68a9660ddc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5345,7 +5346,8 @@ AudioSource:
   m_GameObject: {fileID: 2611970873343917819}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24304612, guid: 86a7353f2579d476fbaa7f161c2e5d00,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -5517,6 +5519,7 @@ MonoBehaviour:
   m_ShootingAudio: {fileID: 2611970873343917814}
   m_FiringClip: {fileID: 8300000, guid: 672a9941361ad494a99fba36759eca80, type: 3}
   m_ChargingClip: {fileID: 8300000, guid: c17f124fcdc0f5446a72f793898bd74b, type: 3}
+  BulletSpeed: 1.7
   m_MinLaunchForce: 15
   m_MaxLaunchForce: 30
   m_ChargingTime: 0.75
