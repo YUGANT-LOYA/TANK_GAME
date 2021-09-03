@@ -123,8 +123,7 @@ AudioSource:
   m_GameObject: {fileID: 804464601564245178}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24304612, guid: 86a7353f2579d476fbaa7f161c2e5d00,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3a77defcde1caaa40b6f7502547e0c4e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -287,7 +286,7 @@ MonoBehaviour:
   m_TankMask:
     serializedVersion: 2
     m_Bits: 256
-  m_ExplosionParticles: {fileID: 19807510, guid: 1911d89758d97cc4898d240e9e2545f4,
+  m_ExplosionParticles: {fileID: 7599456038211736238, guid: 00b6d4f057bd4af489c457b1aa3795ae,
     type: 3}
   m_ExplosionAudio: {fileID: 8649849393677143879, guid: 1911d89758d97cc4898d240e9e2545f4,
     type: 3}
