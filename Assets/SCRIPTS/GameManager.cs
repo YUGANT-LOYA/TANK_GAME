@@ -137,16 +137,16 @@ public class GameManager : MonoBehaviour
 		string msg = "DRAW !";
 
 		if (m_RoundWinner != null)
-			msg = m_RoundWinner.m_ColoredPlayerText + "WINS THE ROUND !";
+			msg = m_RoundWinner.m_ColoredPlayerText + " WINS THE ROUND !";
 		msg += "\n\n\n\n";
 
 		for (int i = 0; i < m_Tanks.Length; i++)
 		{
-			msg += m_Tanks[i].m_ColoredPlayerText + " : " + m_Tanks[i].m_Wins + "WINS \n";
+			msg += m_Tanks[i].m_ColoredPlayerText + " : " + m_Tanks[i].m_Wins + " WINS \n";
 		}
 
 		if (m_GameWinner != null)
-			msg = m_GameWinner.m_ColoredPlayerText + "WINS THE GAME !";
+			msg = m_GameWinner.m_ColoredPlayerText + " WINS THE GAME !";
 
 		return msg;
 	}
